@@ -1,0 +1,21 @@
+<%- include('templates/header'); -%>
+
+<div class="container">
+    <div id="query" class="jumbotron">
+        <h1>Open Library</h1>
+        <p>Please enter the ISBN of the book you'd like to retreieve</p>
+        <form action="/results" method="GET">
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label" for="isbn">ISBN</label>
+                <div class="col-sm-4">
+                    <input name="isbn" class="form-control" type="text" placeholder="0" id="isbn">
+                </div>
+                <div class="col-sm-6">
+                    <button class="btn btn-primary" type="submit" id="submit">Query</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<%- include ('templates/footer'); -%>

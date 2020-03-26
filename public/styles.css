@@ -1,0 +1,21 @@
+.footer {
+    text-align:center;
+}
+
+.cover {
+    border: 5px solid black;
+    border-radius: 10px;
+    flex-grow:3;
+    text-align: center;
+}
+
+.info {
+    margin: 50px;
+    font-size:25px;
+    flex-grow:4;
+}
+
+.flexbox {
+    display:flex;
+    
+}
