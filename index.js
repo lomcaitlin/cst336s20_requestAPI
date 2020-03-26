@@ -15,8 +15,8 @@ app.get('/results', function(req, res) {
     request (url, function(error, response, dataStream) {
         if (!error && response.statusCode == 200) {
             var data = JSON.parse(dataStream);
-            // console.log(data);
-            res.render('results', {data: data});
+            // console.log(data[`ISBN:${isbn}`]);
+            res.render('results', {"data":data[`ISBN:${isbn}`]});
         }
     });
 });

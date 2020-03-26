@@ -6,17 +6,17 @@
         <button class="btn btn-primary" onclick='location.href="/";'>Search Again</button>
     </div>
     <div id="result" class="flexbox">
-            <div class="cover">
-                <img src='<%=data["ISBN:0451526538"].cover.large%>''>
-            </div>
-            <div class="info">
-                <div class="infoRow">Title: <%=data["ISBN:0451526538"].title%></div>
-                <div class="infoRow">Author: <%=data["ISBN:0451526538"].authors[0].name%></div>
-                <div class="infoRow">Publish: <%=data["ISBN:0451526538"].publish_date%></div>
-                <div class="infoRow">Publisher: <%=data["ISBN:0451526538"].publishers[0].name%></div>
-                <div class="infoRow">ISBN: <%=data["ISBN:0451526538"].identifiers.isbn_10[0]%></div>
-                <div class="infoRow">Pages: <%=data["ISBN:0451526538"].number_of_pages%></div>
-            </div>
+        <div class="cover">
+            <img src='<%=data.cover.large%>''>
+        </div>
+        <div class="info">
+            <div class="infoRow">Title: <%=data.title%></div>
+            <div class="infoRow">Author: <%=data.authors[0].name%></div>
+            <div class="infoRow">Publish: <%=data.publish_date%></div>
+            <div class="infoRow">Publisher: <%=data.publishers[0].name%></div>
+            <div class="infoRow">ISBN: <%=data.identifiers.isbn_10[0]%></div>
+            <div class="infoRow">Pages: <%=data.number_of_pages%></div>
+        </div>
     </div>
 </div>
 
